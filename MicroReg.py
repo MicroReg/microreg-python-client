@@ -33,6 +33,21 @@ class MicroRegClient:
 
         return self.__client.get_service_details(name)
 
+    def get_all_service_details(self):
+        '''
+        Get information about all the services
+        '''
+
+        return self.__client.get_all_service_details()
+
+    def get_reg_count(self):
+        '''
+        Get the registration count of services currently registered with the
+        server
+        '''
+
+        return self.__client.get_reg_count()
+
     def unregister(self, name):
         '''
         Unregister an existing service
